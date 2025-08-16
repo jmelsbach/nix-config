@@ -30,6 +30,26 @@
     userName = "Johannes Melsbach";
     userEmail = "dev@melsbach.org";
   }; 
+  
+  programs.neovim = {
+    enable = true;
+    viAlias = true;
+    vimAlias = true;
+    extraConfig = ''
+      set number
+      set mouse=a
+    '';
+  };
+  
+  # iTerm2 Configuration
+  programs.iterm2 = {
+    enable = true;
+    settings = {
+      "Normal Font" = "JetBrainsMonoNLNerdFontComplete-Regular 14";
+      "Non-ASCII Font" = "JetBrainsMonoNLNerdFontComplete-Regular 14";
+    };
+  };
+
 
   homebrew = {
     enable = true;
