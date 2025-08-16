@@ -5,6 +5,8 @@
   # Home Manager state version
   home.stateVersion = "24.05"; # Or your desired version
 
+  home.homeDirectory = "/Users/johannes";
+
   # Your user-specific packages that were here before
   home.packages = [
     pkgs.aerospace
