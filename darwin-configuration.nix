@@ -44,6 +44,7 @@
       "slack"
       "spotify"
       "raycast"
+      "zed"
       "zen"
       "zotero@beta"
       "font-jetbrains-mono-nerd-font"

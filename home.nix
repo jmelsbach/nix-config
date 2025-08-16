@@ -25,11 +25,26 @@
   # This is crucial for Home Manager to manage itself
   programs.home-manager.enable = true;
 
-  # You can add all future user-specific config here
-  # For example:
-  # programs.git = {
-  #   enable = true;
-  #   userName = "Johannes";
-  #   userEmail = "your@email.com";
-  # };
+   programs.git = {
+     enable = true;
+     userName = "Johannes Melsbach";
+     userEmail = "me@melsbach.dev";
+   };
+  programs.zsh = {
+  enable = true;
+  enableCompletion = true;
+  enableAutosuggestions = true;
+  enableSyntaxHighlighting = true;
+
+  "oh-my-zsh" = {
+    enable = true;
+    theme = "robbyrussell";
+    plugins = [ "git" "docker" ];
+  };
+
+  shellAliases = {
+    ll = "ls -lah";
+    gs = "git status";
+  };
+};
 }
