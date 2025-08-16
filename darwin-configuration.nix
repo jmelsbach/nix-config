@@ -38,6 +38,7 @@
       "anki"
       "discord"
       "hiddenbar"
+      "homerow"
       "iterm2"
       "logseq"
       "oh-my-zsh"
