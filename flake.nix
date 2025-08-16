@@ -21,6 +21,11 @@
       modules = [
         # 3. Add the Home Manager module for nix-darwin
         home-manager.darwinModules.home-manager
+	{
+	 home-manager.useGlobalPkgs = true;
+	 home-manager.useUserPackages = true;
+	 home-manager.users.johannes = ./home.nix;
+	}
 
         # Your main configuration file
         ./darwin-configuration.nix
