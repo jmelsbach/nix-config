@@ -15,6 +15,7 @@
 
 
   environment.systemPackages = [
+    pkgs.docker
     pkgs.gh
     pkgs.git
     pkgs.htop
