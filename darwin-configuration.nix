@@ -29,6 +29,9 @@
     enable = true;
     userName = "Johannes Melsbach";
     userEmail = "dev@melsbach.org";
+    extraConfig = {
+     core.editor = "nvim";
+    };
   }; 
   
   programs.neovim = {
