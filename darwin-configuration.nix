@@ -34,7 +34,22 @@
      core.editor = "nvim";
     };
   }; 
-  
+
+  programs.zsh = {
+    enable = true;
+    shellAliases = {
+      ".." = "cd ..";
+      ll = "ls -alh";
+      gs = "git status";
+    };
+    env = {
+      EDITOR = "nvim";
+    };
+    initExtra = ''
+      neofetch
+    '';
+  };
+
   programs.neovim = {
     enable = true;
     viAlias = true;
