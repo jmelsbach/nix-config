@@ -24,6 +24,12 @@
     pkgs.uv
     pkgs.wget
   ];
+  
+  programs.git = {
+    enable = true;
+    userName = "Johannes Melsbach";
+    userEmail = "dev@melsbach.org";
+  }; 
 
   homebrew = {
     enable = true;
@@ -66,6 +72,8 @@
       "PDF Expert" = 1055273043;
       "Pixelmator Pro" = 1289583905;
     };
+    
+
 
     # Optional: A list of taps (third-party repositories) to add.
     # This is commented out, but shown as an example.
