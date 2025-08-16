@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    darwin.url = "github:lnl7/nix-darwin";
+    darwin.url = "github:nix-darwin/nix-darwin";
     darwin.inputs.nixpkgs.follows = "nixpkgs";
 
     # 1. Add Home Manager as an input
@@ -19,17 +19,14 @@
       system = "aarch64-darwin";
       pkgs = nixpkgs.legacyPackages.aarch64-darwin;
       modules = [
-        # 3. Add the Home Manager module for nix-darwin
+        ./darwin-configuration.nix
         home-manager.darwinModules.home-manager
 	{
 	 home-manager.useGlobalPkgs = true;
 	 home-manager.useUserPackages = true;
 	 home-manager.users.johannes = ./home.nix;
 	}
-
-        # Your main configuration file
-        ./darwin-configuration.nix
-      ];
+              ];
     };
   };
 }
