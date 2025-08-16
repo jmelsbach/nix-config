@@ -2,6 +2,12 @@
 { config, pkgs, ... }:
 
 {
+  users.users.johannes = {
+  home = "/Users/johannes";
+  shell = pkgs.zsh; # optional, but nice to set
+};
+  
+  ids.gids.nixbld = 350;
 
   #nix.enable = false; # For Determinate Systems installer
   networking.hostName = "m1-max";
