@@ -6,21 +6,29 @@
   home = "/Users/johannes";
   shell = pkgs.zsh; # optional, but nice to set
 };
-  
+
   ids.gids.nixbld = 350;
 
   #nix.enable = false; # For Determinate Systems installer
   networking.hostName = "m1-max";
   system.primaryUser = "johannes";
 
-  # install xcode developer tools
-  system.activationScripts.postActivation.text = ''
-    # Show a GUI prompt if the tools are not installed.
-    /usr/bin/xcode-select --install >/dev/null 2>&1 || true
-  '';
 
   # System-wide packages, available to all users.
   environment.systemPackages = [
+    pkgs.aerospace
+    pkgs.
+    pkgs.docker
+    pkgs.gh
+    pkgs.htop
+    pkgs.neofetch
+    pkgs.neovim
+    pkgs.oh-my-zsh
+    pkgs.stow
+    pkgs.tmux
+    pkgs.uv
+    pkgs.wget
+    pkgs.git
       ];
 
 
@@ -38,6 +46,7 @@
       "logi-options+"
       "iterm2"
       "logseq"
+      "obs"
       "proton-mail-bridge"
       "proton-pass"
       "protonvpn"
