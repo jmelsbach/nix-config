@@ -46,6 +46,7 @@
       "logi-options+"
       "iterm2"
       "logseq"
+      "notion"
       "obs"
       "proton-mail-bridge"
       "proton-pass"
@@ -53,8 +54,10 @@
       "slack"
       "spotify"
       "raycast"
+      "whatsapp"
       "zed"
       "zen"
+      "zoom"
       "zotero@beta"
       "font-jetbrains-mono-nerd-font"
     ];
